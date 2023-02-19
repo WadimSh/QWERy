@@ -5,18 +5,20 @@
   "main": "index.js", 
   "scripts": { 
     "build": "webpack --mode production", 
-    "dev": "webpack serve" 
+    "dev": "webpack serve",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist"
   }, 
   "repository": { 
     "type": "git", 
-    "url": "" 
+    "url": "git+https://github.com/WadimSh/QWERy.git" 
   }, 
-  "author": "", 
+  "author": "Vadim Shiringa", 
   "license": "ISC", 
   "bugs": { 
-    "url": "" 
+    "url": "https://github.com/WadimSh/QWERy/issues" 
   }, 
-  "homepage": "",
+  "homepage": "https://github.com/WadimSh/QWERy#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
@@ -25,6 +27,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "cssnano": "^5.1.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^6.2.1",
