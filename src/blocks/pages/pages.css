@@ -1,0 +1,72 @@
+.pages {
+  /*назначены шрефты и определен текущий размер ширфта сайта*/
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+  /*переменные цветовой палитры сайта*/
+  --main-background: #000;
+  --main-font-color: #fff;
+  --button-background: #ffa343;
+  --leader-font-color: #ffc178;
+  --section-font-color: #fbd784;
+  --footer-font-color: #ffd1a0;
+
+  width: 100%;
+  background-color: var(--main-background);
+  color: var(--main-font-color);
+}
+
+.text-title-large {
+  margin: 0;
+  font-weight: 700;
+  font-size: 5.333rem;
+  line-height: 104%;
+  text-transform: capitalize;
+}
+
+.text-title-normal {
+  margin: 0;
+  font-weight: 700;
+  font-size: 3.555rem;
+  line-height: 136%;
+}
+
+.text-subtitle-large {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 139%;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.text-subtitle-medium {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 178%;
+}
+
+.text-subtitle-small {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 178%;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+}
+
+.section {
+  background-image: url(../../images/leader.jpg);
+  height: 100vh;
+  padding-top: 200px;
+}
